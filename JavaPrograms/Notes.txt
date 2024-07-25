@@ -1,0 +1,7 @@
+1. What is the difference between interface and abstract
+Ans : In Java, an abstract class can have both abstract and concrete methods, allowing partial implementation, and it can maintain state through instance variables. It supports single inheritance.
+
+ Conversely, an interface can only declare abstract methods (until Java 8, which introduced default and static methods) and constants, enforcing complete abstraction. Interfaces allow a class to implement multiple interfaces, promoting multiple inheritance. While abstract classes are used for closely related classes sharing code, interfaces define a contract for disparate classes to implement. 
+ 
+ 
+ Abstract classes can have constructors and member variables, whereas interfaces cannot, except for static and default methods.
