@@ -5,3 +5,42 @@ Ans : In Java, an abstract class can have both abstract and concrete methods, al
  
  
  Abstract classes can have constructors and member variables, whereas interfaces cannot, except for static and default methods.
+
+
+2. Can we use System.out.println directly inside a class body ?
+Ans: No, you cannot use System.out.println directly inside a class body in Java. Statements like System.out.println must be placed inside a method, constructor, initializer block, or static initializer block.
+
+Example 
+public class Main {
+    public static void main(String[] args) {
+        new Outer();
+        Outer.printStaticMessage();
+    }
+}
+
+class Outer {
+    // Instance initializer block
+    {
+        System.out.println("Inside an instance initializer block");
+    }
+
+    // Static initializer block
+    static {
+        System.out.println("Inside a static initializer block");
+    }
+
+    // Constructor
+    Outer() {
+        System.out.println("Inside a constructor");
+    }
+
+    // Instance method
+    void printMessage() {
+        System.out.println("Inside an instance method");
+    }
+
+    // Static method
+    static void printStaticMessage() {
+        System.out.println("Inside a static method");
+    }
+}
