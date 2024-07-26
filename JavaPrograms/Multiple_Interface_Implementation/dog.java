@@ -1,4 +1,6 @@
-public class dog implements animal,pet{
+package Multiple_Interface_Implementation;
+
+public class dog implements pet,animal{
 
     @Override
     public void makesound() {
@@ -11,5 +13,8 @@ public class dog implements animal,pet{
         System.out.println("Fetch the ball");
         
     }
+
+
+    
     
 }

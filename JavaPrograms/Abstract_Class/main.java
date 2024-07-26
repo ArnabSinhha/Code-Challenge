@@ -9,6 +9,8 @@ public class main {
         jenny.makeSound();
         jenny.sleep();
 
+
+        System.out.println("\n");
         /*
          * This example shows an abstract class with a constructor and fields that are initialized in the subclass.
          */
@@ -17,6 +19,8 @@ public class main {
          System.out.println(cap.color);
          System.out.println(cap.area());
 
+
+         System.out.println("\n");
          /**
           * This example demonstrates multiple subclasses implementing the abstract methods of a common abstract class.
           */
@@ -29,7 +33,7 @@ public class main {
          shine.start();
          shine.stop();
             
-
+        System.out.println("\n");
         /*Example 4: Abstract Class with Interface Implementation
          This example shows an abstract class implementing an interface and providing a base implementation for some methods. */
 
@@ -39,14 +43,17 @@ public class main {
          fender.play();
          fender.clean();
 
+         System.out.println("\n");
+
          /*Example 5: Abstract Class with Template Method Pattern
            This example demonstrates the Template Method design pattern using an abstract class.
         */
          
-        // game football = new football();
-        // game cricket = new cricket();
-        // football.play();
-        // cricket.play();
+        game football = new football();
+        game cricket = new cricket();
+        football.play();
+        cricket.play();
+    
         
     }
 }
